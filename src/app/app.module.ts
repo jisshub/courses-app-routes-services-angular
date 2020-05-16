@@ -8,6 +8,14 @@ import { CoursesEditComponent } from './courses/courses-edit/courses-edit.compon
 import { TrainersComponent } from './trainers/trainers.component';
 import { TrainersEditComponent } from './trainers/trainers-edit/trainers-edit.component';
 import { HeaderComponent } from './header/header.component';
+import { Routes, RouterModule } from '@angular/router';
+
+export const routes: Routes = [
+  {path:'', component: HomeComponent},
+  {path:'courses', component: CoursesComponent},
+  {path: 'trainers', component: TrainersComponent},
+]
+
 
 @NgModule({
   declarations: [
@@ -20,7 +28,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,13 +7,15 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+
+                    <!-- give router link to navigate to diffrent routes-->
+                <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
+                <a class="nav-link" [routerLink]="['/courses']" routerLinkActive="router-link-active" >Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Trainers</a>
+                    <a [routerLink]="['/trainers']" routerLinkActive="router-link-active"  class="nav-link">Trainers</a>
                 </li>
             </ul>
         </div>
