@@ -1,1 +1,12 @@
-<p>trainers works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <app-trainers-edit></app-trainers-edit>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="list-group mb-5">
+            <li class="list-group-item" *ngFor="let eachTrainer of trainersArr">{{eachTrainer.name}} - {{eachTrainer.course}}</li>
+        </ul>
+    </div>
+</div>

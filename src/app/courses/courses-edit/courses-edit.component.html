@@ -4,14 +4,14 @@
         <form>
             <div class="form-group">
                 <label for="name">Course Name</label>
-                <input type="text" name="name" id="name" class="form-control">
+                <input type="text" name="name" id="name" class="form-control" #getCourse>
             </div>
             <div class="form-group">
                 <label for="amount">Course Amount</label>
-                <input type="number" name="amount" id="amount" class="form-control">
+                <input type="number" name="amount" id="amount" class="form-control" #getAmount>
             </div>
             <div class="form-group">
-                <button class="btn btn-success">Add</button>
+                <button class="btn btn-block btn-outline-success" (click)="onSubmit()" type="button">Add</button>
             </div>
         </form>
     </div>
